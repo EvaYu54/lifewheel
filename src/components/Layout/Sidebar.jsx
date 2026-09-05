@@ -24,7 +24,7 @@ export default function Sidebar({ isOpen, onClose }) {
         {/* Logo */}
         <div style={styles.logo}>
           <span style={styles.logoIcon}>◉</span>
-          <span style={styles.logoText}>Колесо Жизни</span>
+          <span style={styles.logoText}>Мое колесо жизни</span>
         </div>
 
         {/* Navigation */}
