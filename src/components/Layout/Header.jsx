@@ -4,7 +4,8 @@ import { useLocation } from 'react-router-dom'
 const titles = {
   '/dashboard': 'Моё Колесо Жизни',
   '/knowledge': 'База знаний',
-  '/profile': 'Профиль',
+  '/profile': 'Личный профиль',
+  '/path': 'Мои цели',
 }
 
 export default function Header({ onMenuClick }) {
@@ -15,7 +16,7 @@ export default function Header({ onMenuClick }) {
   return (
     <header style={styles.header}>
       <button onClick={onMenuClick} style={styles.menuBtn}>☰</button>
-      <h1 style={styles.title}>{title}</h1>
+      <h1 style={styles.title}> Заголовок - {title}</h1>
       <div style={styles.date}>
         {new Date().toLocaleDateString('ru-RU', {
           day: 'numeric',

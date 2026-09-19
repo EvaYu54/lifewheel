@@ -35,5 +35,6 @@ const styles = {
     flex: 1,
     padding: 32,
     overflowY: 'auto',
+    border:'1px solid yellow',
   },
 }

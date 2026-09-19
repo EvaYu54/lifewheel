@@ -8,6 +8,7 @@ import Dashboard from './Dashboard/Dashboard'
 import KnowledgeBase from './Knowledge/KnowledgeBase'
 import ArticlePage from './Knowledge/ArticlePage'
 import ProfilePage from './Profile/ProfilePage'
+import PathPage from './path/PathPage'
 
 function ProtectedRoute({ children }) {
   const { isAuthenticated } = useAuth()
@@ -30,6 +31,7 @@ function AppRoutes() {
         <Route path="knowledge" element={<KnowledgeBase />} />
         <Route path="knowledge/:id" element={<ArticlePage />} />
         <Route path="profile" element={<ProfilePage />} />
+        <Route path="path" element={<PathPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>

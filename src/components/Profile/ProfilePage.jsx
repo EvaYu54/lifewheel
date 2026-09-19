@@ -39,7 +39,7 @@ export default function ProfilePage() {
             <h2 style={styles.profileName}>{user.name}</h2>
             <p style={styles.profileEmail}>{user.email}</p>
             <p style={styles.profileDate}>
-              На платформе с {format(new Date(user.createdAt), 'd MMMM yyyy', { locale: ru })}
+              На нашей платформе с {format(new Date(user.createdAt), 'd MMMM yyyy', { locale: ru })}
             </p>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function ProfilePage() {
             />
           </div>
           <button className="btn btn-primary" onClick={handleSave}>
-            {saved ? '✅ Сохранено!' : '💾 Сохранить'}
+            {saved ? '✅ Сохранено!' : 'Сохранить'}
           </button>
         </div>
       </div>

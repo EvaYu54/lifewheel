@@ -6,6 +6,7 @@ const navItems = [
   { to: '/dashboard', label: 'Колесо Жизни', icon: '◉' },
   { to: '/knowledge', label: 'База знаний', icon: '📖' },
   { to: '/profile', label: 'Профиль', icon: '👤' },
+  { to: '/path', label: 'Мои цели', icon: '👤' },
 ]
 
 export default function Sidebar({ isOpen, onClose }) {
@@ -110,6 +111,7 @@ const styles = {
     flexDirection: 'column',
     gap: 4,
     flex: 1,
+    border: '1px solid white',
   },
   navItem: {
     display: 'flex',
